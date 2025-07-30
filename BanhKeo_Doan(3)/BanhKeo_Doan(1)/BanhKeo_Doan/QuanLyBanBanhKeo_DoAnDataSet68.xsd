@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuanLyBanBanhKeo_DoAnDataSet68" targetNamespace="http://tempuri.org/QuanLyBanBanhKeo_DoAnDataSet68.xsd" xmlns:mstns="http://tempuri.org/QuanLyBanBanhKeo_DoAnDataSet68.xsd" xmlns="http://tempuri.org/QuanLyBanBanhKeo_DoAnDataSet68.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyBanBanhKeo_DoAnConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBanBanhKeo_DoAnConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BanhKeo_Doan.Properties.Settings.GlobalReference.Default.QuanLyBanBanhKeo_DoAnConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewBaoCaoXuatChuyenTableAdapter" GeneratorDataComponentClassName="ViewBaoCaoXuatChuyenTableAdapter" Name="ViewBaoCaoXuatChuyen" UserDataComponentName="ViewBaoCaoXuatChuyenTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyBanBanhKeo_DoAnConnectionString (Settings)" DbObjectName="QuanLyBanBanhKeo_DoAn.dbo.ViewBaoCaoXuatChuyen" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NgayXuatChuyen, TenHangHoa, TenDVT, SoLuongXuat, GhiChu, MaPhieuXuatChuyen, KhoXuat, KhoNhap FROM dbo.ViewBaoCaoXuatChuyen</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NgayXuatChuyen" DataSetColumn="NgayXuatChuyen" />
+              <Mapping SourceColumn="TenHangHoa" DataSetColumn="TenHangHoa" />
+              <Mapping SourceColumn="TenDVT" DataSetColumn="TenDVT" />
+              <Mapping SourceColumn="SoLuongXuat" DataSetColumn="SoLuongXuat" />
+              <Mapping SourceColumn="GhiChu" DataSetColumn="GhiChu" />
+              <Mapping SourceColumn="MaPhieuXuatChuyen" DataSetColumn="MaPhieuXuatChuyen" />
+              <Mapping SourceColumn="KhoXuat" DataSetColumn="KhoXuat" />
+              <Mapping SourceColumn="KhoNhap" DataSetColumn="KhoNhap" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuanLyBanBanhKeo_DoAnDataSet68" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QuanLyBanBanhKeo_DoAnDataSet68" msprop:Generator_DataSetName="QuanLyBanBanhKeo_DoAnDataSet68">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewBaoCaoXuatChuyen" msprop:Generator_RowEvHandlerName="ViewBaoCaoXuatChuyenRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewBaoCaoXuatChuyenRowDeleted" msprop:Generator_RowDeletingName="ViewBaoCaoXuatChuyenRowDeleting" msprop:Generator_RowEvArgName="ViewBaoCaoXuatChuyenRowChangeEvent" msprop:Generator_TablePropName="ViewBaoCaoXuatChuyen" msprop:Generator_RowChangedName="ViewBaoCaoXuatChuyenRowChanged" msprop:Generator_RowChangingName="ViewBaoCaoXuatChuyenRowChanging" msprop:Generator_TableClassName="ViewBaoCaoXuatChuyenDataTable" msprop:Generator_RowClassName="ViewBaoCaoXuatChuyenRow" msprop:Generator_TableVarName="tableViewBaoCaoXuatChuyen" msprop:Generator_UserTableName="ViewBaoCaoXuatChuyen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NgayXuatChuyen" msprop:Generator_ColumnPropNameInRow="NgayXuatChuyen" msprop:Generator_ColumnPropNameInTable="NgayXuatChuyenColumn" msprop:Generator_ColumnVarNameInTable="columnNgayXuatChuyen" msprop:Generator_UserColumnName="NgayXuatChuyen" type="xs:dateTime" />
+              <xs:element name="TenHangHoa" msprop:Generator_ColumnPropNameInRow="TenHangHoa" msprop:Generator_ColumnPropNameInTable="TenHangHoaColumn" msprop:Generator_ColumnVarNameInTable="columnTenHangHoa" msprop:Generator_UserColumnName="TenHangHoa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenDVT" msprop:Generator_ColumnPropNameInRow="TenDVT" msprop:Generator_ColumnPropNameInTable="TenDVTColumn" msprop:Generator_ColumnVarNameInTable="columnTenDVT" msprop:Generator_UserColumnName="TenDVT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoLuongXuat" msprop:Generator_ColumnPropNameInRow="SoLuongXuat" msprop:Generator_ColumnPropNameInTable="SoLuongXuatColumn" msprop:Generator_ColumnVarNameInTable="columnSoLuongXuat" msprop:Generator_UserColumnName="SoLuongXuat" type="xs:double" />
+              <xs:element name="GhiChu" msprop:Generator_ColumnPropNameInRow="GhiChu" msprop:Generator_ColumnPropNameInTable="GhiChuColumn" msprop:Generator_ColumnVarNameInTable="columnGhiChu" msprop:Generator_UserColumnName="GhiChu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MaPhieuXuatChuyen" msprop:Generator_ColumnPropNameInRow="MaPhieuXuatChuyen" msprop:Generator_ColumnPropNameInTable="MaPhieuXuatChuyenColumn" msprop:Generator_ColumnVarNameInTable="columnMaPhieuXuatChuyen" msprop:Generator_UserColumnName="MaPhieuXuatChuyen">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KhoXuat" msprop:Generator_ColumnPropNameInRow="KhoXuat" msprop:Generator_ColumnPropNameInTable="KhoXuatColumn" msprop:Generator_ColumnVarNameInTable="columnKhoXuat" msprop:Generator_UserColumnName="KhoXuat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KhoNhap" msprop:Generator_ColumnPropNameInRow="KhoNhap" msprop:Generator_ColumnPropNameInTable="KhoNhapColumn" msprop:Generator_ColumnVarNameInTable="columnKhoNhap" msprop:Generator_UserColumnName="KhoNhap">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

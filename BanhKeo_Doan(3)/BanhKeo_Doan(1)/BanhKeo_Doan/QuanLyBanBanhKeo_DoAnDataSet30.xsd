@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuanLyBanBanhKeo_DoAnDataSet30" targetNamespace="http://tempuri.org/QuanLyBanBanhKeo_DoAnDataSet30.xsd" xmlns:mstns="http://tempuri.org/QuanLyBanBanhKeo_DoAnDataSet30.xsd" xmlns="http://tempuri.org/QuanLyBanBanhKeo_DoAnDataSet30.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyBanBanhKeo_DoAnConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyBanBanhKeo_DoAnConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BanhKeo_Doan.Properties.Settings.GlobalReference.Default.QuanLyBanBanhKeo_DoAnConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vHangDoiTraTableAdapter" GeneratorDataComponentClassName="vHangDoiTraTableAdapter" Name="vHangDoiTra" UserDataComponentName="vHangDoiTraTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyBanBanhKeo_DoAnConnectionString (Settings)" DbObjectName="QuanLyBanBanhKeo_DoAn.dbo.vHangDoiTra" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SoChungTu, NgayChungTu, TenHangHoa, TenDVT, SoLuong FROM dbo.vHangDoiTra</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SoChungTu" DataSetColumn="SoChungTu" />
+              <Mapping SourceColumn="NgayChungTu" DataSetColumn="NgayChungTu" />
+              <Mapping SourceColumn="TenHangHoa" DataSetColumn="TenHangHoa" />
+              <Mapping SourceColumn="TenDVT" DataSetColumn="TenDVT" />
+              <Mapping SourceColumn="SoLuong" DataSetColumn="SoLuong" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuanLyBanBanhKeo_DoAnDataSet30" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QuanLyBanBanhKeo_DoAnDataSet30" msprop:Generator_DataSetName="QuanLyBanBanhKeo_DoAnDataSet30">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vHangDoiTra" msprop:Generator_RowEvHandlerName="vHangDoiTraRowChangeEventHandler" msprop:Generator_RowDeletedName="vHangDoiTraRowDeleted" msprop:Generator_RowDeletingName="vHangDoiTraRowDeleting" msprop:Generator_RowEvArgName="vHangDoiTraRowChangeEvent" msprop:Generator_TablePropName="vHangDoiTra" msprop:Generator_RowChangedName="vHangDoiTraRowChanged" msprop:Generator_RowChangingName="vHangDoiTraRowChanging" msprop:Generator_TableClassName="vHangDoiTraDataTable" msprop:Generator_RowClassName="vHangDoiTraRow" msprop:Generator_TableVarName="tablevHangDoiTra" msprop:Generator_UserTableName="vHangDoiTra">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SoChungTu" msprop:Generator_ColumnPropNameInRow="SoChungTu" msprop:Generator_ColumnPropNameInTable="SoChungTuColumn" msprop:Generator_ColumnVarNameInTable="columnSoChungTu" msprop:Generator_UserColumnName="SoChungTu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgayChungTu" msprop:Generator_ColumnPropNameInRow="NgayChungTu" msprop:Generator_ColumnPropNameInTable="NgayChungTuColumn" msprop:Generator_ColumnVarNameInTable="columnNgayChungTu" msprop:Generator_UserColumnName="NgayChungTu" type="xs:dateTime" />
+              <xs:element name="TenHangHoa" msprop:Generator_ColumnPropNameInRow="TenHangHoa" msprop:Generator_ColumnPropNameInTable="TenHangHoaColumn" msprop:Generator_ColumnVarNameInTable="columnTenHangHoa" msprop:Generator_UserColumnName="TenHangHoa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenDVT" msprop:Generator_ColumnPropNameInRow="TenDVT" msprop:Generator_ColumnPropNameInTable="TenDVTColumn" msprop:Generator_ColumnVarNameInTable="columnTenDVT" msprop:Generator_UserColumnName="TenDVT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoLuong" msprop:Generator_ColumnPropNameInRow="SoLuong" msprop:Generator_ColumnPropNameInTable="SoLuongColumn" msprop:Generator_ColumnVarNameInTable="columnSoLuong" msprop:Generator_UserColumnName="SoLuong" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
